@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>COLOR PREFERENCES</title>
+
+    <style>
+      #rectangleWrapper {
+        padding: 50px 50px 0 50px;
+      }
+
+      .rectangle {
+        height: 100px;
+      }
+
+      #bright-blue {
+        background-color: #1D77CB;
+      }
+      #bright-green {
+        background-color: #37CB44;
+      }
+      #bright-red {
+        background-color: #CB3750;
+      }
+      #soft-yellow {
+        background-color: #ECEC55;
+      }
+      #dark-gray {
+        background-color: #444444;
+      }
+      #light-grayish-blue {
+        background-color: #7196AD;
+      }
+      #dark-yellow {
+        background-color: #5A591B;
+      }
+      #steel-blue {
+        background-color: #4682B4;
+      }
+      #soft-red {
+        background-color: #B44655;
+      }
+      #bright-pink {
+        background-color: #BC4FA8;
+      }
+    </style>
+  </head>
+  <body onload="displayIDs()">
+
+    <h1>COLOR PREFERENCES</h1>
+    <h2>These are my favorite colors.</h2>
+
+    <div id="rectangleWrapper">
+      <div class="rectangle" id="bright-blue"></div>
+      <p>#1D77CB</p>
+      <div class="rectangle" id="bright-green"></div>
+      <p>#37CB44</p>
+      <div class="rectangle" id="bright-red"></div>
+      <p>#CB3750</p>
+      <div class="rectangle" id="soft-yellow"></div>
+      <p>#ECEC55</p>
+      <div class="rectangle" id="dark-gray"></div>
+      <p>#444444</p>
+      <div class="rectangle" id="light-grayish-blue"></div>
+      <p>#7196AD</p>
+      <div class="rectangle" id="dark-yellow"></div>
+      <p>#5A591B</p>
+      <div class="rectangle" id="steel-blue"></div>
+      <p>#4682B4</p>
+      <div class="rectangle" id="soft-red"></div>
+      <p>#B44655</p>
+      <div class="rectangle" id="bright-pink"></div>
+      <p>#BC4FA8</p>
+    </div>
+
+    <script>
+    function displayIDs() {
+      console.log("Here are the rectangle IDs");
+
+      const rectangleWrapper = document.getElementById("rectangleWrapper");
+      const rectangles = rectangleWrapper.getElementsByClassName("rectangle");
+
+      for (const rectangle of rectangles) {
+        console.log(rectangle.id);
+      }
+    }
+    </script>
+  </body>
+</html>
