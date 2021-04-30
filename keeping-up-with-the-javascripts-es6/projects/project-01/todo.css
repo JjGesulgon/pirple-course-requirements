@@ -1,0 +1,99 @@
+body {
+  background-color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #3f3f3f;
+}
+
+h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 64px;
+  font-weight: lighter;
+  line-height: 0px;
+  text-align: center;
+  color: #101010;
+}
+h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: lighter;
+  background-color: white;
+  color: #236B8E;
+  max-width: 350px;
+  text-align: center;
+  padding: 10px 30px;
+  border-radius: 10px;
+  display: block;
+  margin: 30px auto;
+  border: 0.2px solid #236B8E;
+}
+
+h3 {
+  font-size: 24px;
+  text-decoration: underline;
+  font-weight: lighter;
+}
+
+form input {
+  display: block;
+  margin-bottom: 20px;
+  line-height: 30px;
+  font-size: 20px;
+  width: 100%;
+  border: 0.2px solid #A8A8A8;
+}
+form input[type=checkbox] {
+  display: inline;
+  width: auto;
+}
+
+#app {
+  max-width: 700px;
+  margin-top: 5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button{
+  background-color: #236B8E;
+  font-size: 12px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: lighter;
+  margin: 0 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: white;
+  color: #236B8E;
+  border: 2px solid #236B8E;
+  font-weight: lighter;
+}
+
+.submitButton{
+  background-color: #236B8E;
+  font-size: 12px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: lighter;
+  border: none;
+  cursor: pointer;
+}
+
+.hidden{
+  display: none;
+}
+
+#index{
+  text-align: center;
+}
+
+
