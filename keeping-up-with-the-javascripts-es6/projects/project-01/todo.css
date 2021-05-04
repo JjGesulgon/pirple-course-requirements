@@ -28,6 +28,11 @@ h2 {
   border: 0.2px solid #236B8E;
 }
 
+#error-message{
+  color: red;
+  text-align: center;
+}
+
 h3 {
   font-size: 24px;
   text-decoration: underline;
@@ -38,13 +43,17 @@ form input {
   display: block;
   margin-bottom: 20px;
   line-height: 30px;
-  font-size: 20px;
   width: 100%;
   border: 0.2px solid #A8A8A8;
 }
 form input[type=checkbox] {
   display: inline;
   width: auto;
+}
+
+.dashboard-form-style{
+  display: inline;
+  width: 600px;
 }
 
 #app {
@@ -71,8 +80,7 @@ form input[type=checkbox] {
 .button:hover{
   background-color: white;
   color: #236B8E;
-  border: 2px solid #236B8E;
-  font-weight: lighter;
+  border: 0.5px solid #236B8E;
 }
 
 .submitButton{

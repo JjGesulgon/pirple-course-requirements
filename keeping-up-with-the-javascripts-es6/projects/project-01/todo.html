@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <title>To Do Lists</title>
     <link rel="stylesheet" href="todo.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/2.0.2/sha.js"></script>
   </head>
   <body>
     <div id="app">
@@ -22,26 +23,58 @@
         <br>
         <h3>Registration Form</h3>
         <br>
-        <form action="" class="sign-up-form">
+        <form name="signUpForm" id="signUpForm" action="" class="sign-up-form">
           <label for="fName">First Name</label>
           <input type="text" id="firstName"/>
           <br>
           <label for="lName">Last Name</label>
           <input type="text" id="lastName"/>
           <br>
-          <label for="email">email</label>
+          <label for="email">Email</label>
           <input type="email" id="email"/>
           <br>
           <label for="password">Password</label>
           <input type="password" id="password"/>
           <br>
-          <input type="checkbox" id="termsAndConditions"> I agree to the <b>Terms of Use</b>
+          <input type="checkbox" id="termsAndConditions"> I have read and agree to the <b>Terms And Conditions</b>
           <br>
-          <button class="submitButton">Sign Up</button>
+          <span><button class="submitButton">Sign Up</button></span>
+          &nbsp;
+          <span><label id="error-message" for="errorMessage"></label></span>
           </form>
         </form>
       </div>
 
+      <div id="login" class="hidden">
+        <br>
+        <h3>Login</h3>
+        <br>
+        <form name="loginForm" id="loginForm" action="" class="login-form">
+          <label for="email">Email</label>
+          <input type="email" id="email"/>
+          <br>
+          <label for="password">Password</label>
+          <input type="password" id="password"/>
+          <br>
+          <button class="submitButton">Login</button>
+          </form>
+        </form>
+      </div>
+
+      <div id="dashboard" class="hidden">
+        <br>
+        <h3>Dashboard</h3>
+        <br>
+        <form name="dashboardForm" id="dashboardForm" action="">
+          <label for="lName">Task</label>
+          <br>
+          <span>
+            <input class="dashboard-form-style" type="text" id="lastName"/>
+          </span>
+            <button class="button">Add</button>
+         
+        </form>
+      </div>
 
     </div>
 
