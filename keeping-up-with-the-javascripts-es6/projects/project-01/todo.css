@@ -53,7 +53,7 @@ form input[type=checkbox] {
 
 .dashboard-form-style{
   display: inline;
-  width: 600px;
+  width: 300px;
 }
 
 #app {
@@ -77,10 +77,30 @@ form input[type=checkbox] {
   cursor: pointer;
 }
 
+.button-danger{
+  background-color: #8e2723;
+  font-size: 12px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: lighter;
+  margin: 0 10px;
+  border: none;
+  cursor: pointer;
+}
+
 .button:hover{
   background-color: white;
   color: #236B8E;
   border: 0.5px solid #236B8E;
+}
+
+.button-danger:hover{
+  background-color: white;
+  color: #8e2723;
+  border: 0.5px solid #8e2723;
 }
 
 .submitButton{
@@ -94,10 +114,30 @@ form input[type=checkbox] {
   font-weight: lighter;
   border: none;
   cursor: pointer;
+  margin-left: 0px !important;
 }
 
 .hidden{
   display: none;
+}
+
+.itemsList{
+  border: 2px solid #236B8E;
+  border-radius: 10px;
+  min-height: 80px;
+}
+
+.left-margin{
+  margin-left: 10px;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.title{
+  font-size: 18px;
+  font-weight: lighter;
 }
 
 #index{

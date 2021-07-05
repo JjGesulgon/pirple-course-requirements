@@ -7,19 +7,26 @@
     <link rel="stylesheet" href="todo.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/2.0.2/sha.js"></script>
   </head>
-  <body>
+  <body onload="init()">
     <div id="app">
       <h1>To Do</h1>
       <h2>A simple task management app</h2>
-
+      <h4 id="user-intro" class="text-center">Hello
+        <span id="currentUserFirstname">First</span>
+        <span id="currentUserLastname">Last</span>
+      </h4>
+      <br>
       <div id="index">
         <p>
           <a href="#" id="btn-signup" class="button">Sign Up</a>
           <a href="#" id="btn-login" class="button">Log In</a>
+          <a href="#" id="btn-dashboard" class="button hidden">Dashboard</a>
+          <a href="#" id="btn-account-settings" class="button hidden">Account Settings</a>
+          <a href="#" id="btn-logout" class="button hidden">Log Out</a>
         </p>
       </div>
 
-      <div id="sign-up" class="hidden">
+      <div id="signup" class="hidden">
         <br>
         <h3>Registration Form</h3>
         <br>
@@ -51,10 +58,10 @@
         <br>
         <form name="loginForm" id="loginForm" action="" class="login-form">
           <label for="email">Email</label>
-          <input type="email" id="email"/>
+          <input type="email" id="emailLogin"/>
           <br>
           <label for="password">Password</label>
-          <input type="password" id="password"/>
+          <input type="password" id="passwordLogin"/>
           <br>
           <button class="submitButton">Login</button>
           </form>
@@ -65,19 +72,66 @@
         <br>
         <h3>Dashboard</h3>
         <br>
-        <form name="dashboardForm" id="dashboardForm" action="">
-          <label for="lName">Task</label>
-          <br>
-          <span>
-            <input class="dashboard-form-style" type="text" id="lastName"/>
-          </span>
-            <button class="button">Add</button>
-         
-        </form>
+        <button id="btnCreateTodoList" class="button submitButton">Create New List</button>
+        <br><br>
+        <div class="itemsList">
+          <h3 class="left-margin">Todo Lists</h3>
+          <ul>
+              <li>
+                Test 1
+              </li>
+              <li>
+                Test 2
+              </li>
+              <li>
+                Test 3
+              </li>
+            </ul>
+        </div>
       </div>
 
+      <div id="createList" class="hidden">
+        <br>
+        <h3>Create New Todo List</h3>
+        <form name="createListForm" id="createListForm" action="" onsubmit="return false">
+          <div id="itemsList" class="itemsList">
+            <div class="left-margin">
+              <br>
+              <div id="finalTaskTitle" class="left-margin">
+                <span>
+                  <label for="listTitle" id="lbl-listName" class="title"> New List</label>
+                </span>
+                <button id="btn-change-list-name" class="button">Change</button>
+              </div>
+              <div id="ChangeTaskTitle" class="hidden">
+                <label for="lName">Task List Name</label>
+                <br>
+                <span>
+                  <input class="dashboard-form-style" type="text" id="taskListName"/>
+                </span>
+                <button id="btn-list-name-update" class="button">Update</button>
+                <button id="btn-cancel-change" class="button-danger">Cancel</button>
+              </div>
+            </div>
+            <br>
+            <div>
+              <ul id="list-id">
+                <li>
+                  <span>
+                    <input class="dashboard-form-style" type="text" id="textbox-taskItem"/>
+                  </span>
+                  <!-- <button class="button">Enter Task Item</button> -->
+                </li>
+              </ul>
+              <br>
+              <button id="btn-submit-todo" class="button">Create Todo List</button>
+              <br><br>
+            </div>
+          </div>
+          <br><br>
+        </form>
+      </div>
     </div>
-
     <script src="todo.js"></script>
   </body>
 </html>
